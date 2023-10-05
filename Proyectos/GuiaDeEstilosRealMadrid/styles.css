@@ -70,6 +70,7 @@ a {
     border-top: 2px solid rgb(18, 0, 184);
 
     background-color: whitesmoke;
+    text-align: justify;
 }
 
 .logo {
@@ -80,4 +81,10 @@ a {
     height: 100px;
     margin: 10px;
     background-color:whitesmoke;
+}
+
+.paleta {
+    margin: 5px;
+    height:220px;
+    align-content: center;
 }
