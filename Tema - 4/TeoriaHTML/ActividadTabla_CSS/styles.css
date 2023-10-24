@@ -1,5 +1,5 @@
 
-table { /* Especificidad de etiqueta HTML */
+table {
     border-collapse: collapse;
 
     width: 200px;
@@ -47,7 +47,7 @@ b {
     color: red;
 }
 
-/*Creamos el css para la segunda tabla*/
+
 
 .tablaPokemon{
     width: 390px;
