@@ -1,50 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividad Tabla CSS</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <h3>Header de la página</h3>
-      </header>
-  
-      <section>
-        <table>
-          <caption>TIC TAC TOE</caption>
-          <tr class="table__row--first-row">
-            <th></th>
-            <th>col1</th>
-            <th>col2</th>
-            <th>col3</th>
-          </tr>
-          <tr>
-            <th>row1</th>
-            <td class="row__td--right-bottom"></td>
-            <td  class="row__td--right-bottom"></td>
-            <td class="row__td--bottom"></td>
-          </tr>
-          <tr>
-            <th>row2</th>
-            <td class="row__td--right-bottom"></td>
-            <td class="row__td--right-bottom"></td>
-            <td class="row__td--bottom"></td>
-          </tr>
-          <tr>
-            <th>row3</th>
-            <td class="row__td--right"></td>
-            <td class="row__td--right"></td>
-            <td></td>
-          </tr>
-         
-        </table>
-      </section>
-      <footer>
-        <h4>Footer de la página</h4>
+    
+    <h4>
+        Header de la página
+    </h4>
+
+    <center>
+        <section>
+            <table>
+                <caption>
+                    TIC TAC TOE
+                </caption>
+                <tr id="table_row--underlined">
+                    <th id="table_row--vertical-line"></th>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                </tr>
+
+                <tr id="table-row--end-line">
+                    <th id="table_row--vertical-line">row1</th>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--bottom"></td>
+                </tr>
+
+                <tr id="table-row--end-line">
+                    <th id="table_row--vertical-line">row2</th>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--bottom"></td>
+                </tr>
+
+                <tr id="table-row--end-line">
+                    <th id="table_row--vertical-line">row3</th>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--right-bottom"></td>
+                    <td class="row__td--right-bottom"></td>
+                </tr>
+
+            </table>
+            <br>
+            <p> Footer de la <b>página</b> </p>
+        </section>
+
+        <br>
+        <br>
+        <br>
+
+        <section>
+            <table class="tablaPokemon">
+                <tr class="tr--efectividad">
+                    <th></th>
+                    <th>Tipos</th>
+                    <th>Efectivo</th>
+                    <th>Poco Efectivo</th>
+                    <th>Débil contra</th>
+                    <th>Inmune contra</th>
+                </tr>
+                <tr class="acero">
+                    <th></th>
+                    <th>Acero</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="volador">
+                    <th></th>
+                    <th>Volador</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="agua">
+                    <th></th>
+                    <th>Agua</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="hielo">
+                    <th></th>
+                    <th>Hielo</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="planta">
+                    <th></th>
+                    <th>Planta</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="bicho">
+                    <th></th>
+                    <th>Bicho</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="electrico">
+                    <th></th>
+                    <th>Electrico</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="normal">
+                    <th></th>
+                    <th>Normal</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="roca">
+                    <th></th>
+                    <th>Roca</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tierra">
+                    <th></th>
+                    <th>Tierra</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="fuego">
+                    <th></th>
+                    <th>Fuego</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="lucha">
+                    <th></th>
+                    <th>Lucha</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="hada">
+                    <th></th>
+                    <th>Hada</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="psiquico">
+                    <th></th>
+                    <th>Psíquico</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="veneno">
+                    <th></th>
+                    <th>Veneno</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="dragon">
+                    <th></th>
+                    <th>Dragón</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="fantasma">
+                    <th></th>
+                    <th>Fantasma</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="siniestro">
+                    <th></th>
+                    <th>Siniestro</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </center>
+
+    <footer>
+        <p> Footer de la <b>página</b> </p>
     </footer>
-    </body>
-  </html>
 </body>
+
 </html>

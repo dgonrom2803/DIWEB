@@ -1,37 +1,116 @@
 
-table {
-    border: 1px solid black;
+table { /* Especificidad de etiqueta HTML */
     border-collapse: collapse;
-    height: 200px;
-    width: 200px;
-}
 
-.table__row--first-row {
-    height: 20px;
+    width: 200px;
+    height: 200px;
+}
+    
+
+#table_row--underlined {
     border-bottom: 2px solid black;
 }
 
-.row__td--right-bottom{
+#table_row--vertical-line {
+    border-right: 2px solid black;
+}
+
+#table_row--horizontal-line {
+    border-bottom: 1px solid grey;
+}
+
+#table-row--end-line{
+    border-right: 1px solid gray;
+}
+
+.row__td--right-bottom {
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-.row__td--bottom{
+.row__td--bottom {
     border-bottom: 1px solid gray;
 }
-.row__td--right{
+.row__td--right {
     border-right: 1px solid gray;
-
 }
 
-h3 {
+h4 {
+    text-align: center;
     color: blue;
 }
-h4 {
-    color: brown;
+
+footer {
+    text-align: center;
 }
 
+b {
+    color: red;
+}
 
-tr th:nth-child(1){
-    width: 20px;
-    background-color: red;
+/*Creamos el css para la segunda tabla*/
+
+.tablaPokemon{
+    width: 390px;
+    height: 500px;
+    border-collapse: collapse;
+}
+
+.efectividad{
+    border-bottom: 2px solid black;
+    background-color: rgb(207, 0, 0);
+}
+.acero{
+    background-color: #878787;
+}
+.volador{
+    background-color: #4281c9;
+}
+.agua{
+    background-color: #331ac5;
+}
+.hielo{
+    background-color: #60dbf8;
+}
+
+.planta{
+    background-color: #287410;
+}
+.bicho{
+    background-color: #58a332;
+}
+.electrico{
+    background-color: #d8ec2d;
+}
+.normal{
+    background-color: #fce6c0;
+}
+.roca{
+    background-color: #ca8e42;
+}
+.tierra{
+    background-color: #c97815;
+}
+.fuego{
+    background-color: #f88c0a;
+}
+.lucha{
+    background-color: rgb(250, 38, 38);
+}
+.hada{
+    background-color: rgb(255, 187, 249);
+}
+.psiquico{
+    background-color: #d85449;
+}
+.veneno{
+    background-color: #f180d3;
+}
+.dragon{
+    background-color: #c177c8;
+}
+.fantasma{
+    background-color: #6c2f85;
+}
+.siniestro{
+    background-color: #6b3340;
 }
