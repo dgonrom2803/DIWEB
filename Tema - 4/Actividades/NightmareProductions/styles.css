@@ -111,3 +111,76 @@ p, span, div{
     margin: 0;
 
 }
+
+
+/************* ZONA MAIN ************/
+.zonaMain{
+
+    margin-top: 10px;
+
+    /*Establecemos el display: grid*/
+    display: grid;
+    /*Cuantas columnas queremos*/
+    grid-template-columns: repeat(12, 1fr);
+
+    /*Establecemos un tamañp minimo a la row*/
+    grid-auto-rows: minmax(200px, auto);
+
+    /*Aplicamos un poco de aire*/
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.main__zonaImagen{
+    grid-column: 2/6;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.main__zonaImagen img {
+   width: auto;
+   max-height: 300px;
+   border-radius: 10px;
+   border: 6px solid #330033;
+   
+
+   transition: 0.1s linear;
+
+}
+.main__zonaImagen img:hover {
+   transform: scale(1.05);
+   border: 0px solid #330033;
+
+}
+.main__zonaDescripcion{
+    grid-column: 6/12;
+
+    border-left: 6px solid #330033;
+
+    padding: 10px;
+
+}
+
+.zonaDescripcion__actores-nota{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores{
+    grid-column: 1;
+}
+.actores-nota__nota{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nota__puntuacion {
+    font-family: 'ZombieHolocaust';
+    font-size: 3em;
+    color: #009900;
+}
