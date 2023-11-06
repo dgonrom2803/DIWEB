@@ -1,0 +1,70 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    margin: 0;
+}
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.header{
+    height: 60px;
+    background-color: #ef5350;
+
+    display: flex;
+    justify-content: space-around;
+}
+.header__zonaTitulo{
+    height: 100%;
+    width: 8%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: #ef5350;
+
+
+}
+
+#zonaTitulo__logo img{
+    width: 130px;
+    height: auto;
+    padding: 15px;
+}
+.header__zonaTitulo:hover{
+    background-color: #d32b2b;
+}
+
+.header__zonaNavegacion{
+    height: 100%;
+    width: 40%;
+    background-color: #ef5350;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.header__zonaNavegacion a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.zonaNavegacion__div{
+    padding: 19px;
+
+}
+.zonaNavegacion__div:hover{
+    background-color: #d32b2b;
+    text-decoration: underline;
+    color: #FFFFFF;
+    
+}
+.zonaNavegacion__div h3{
+    margin: 0;
+
+}
