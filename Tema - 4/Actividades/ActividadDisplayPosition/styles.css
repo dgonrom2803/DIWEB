@@ -48,31 +48,34 @@ body {
 
 
 /*Primera línea*/
+/*--------------------------------------------------------------------*/
 .main__section--aqua {
     background-color: aqua;
 }
 
 .section__caja--1-0 {
-    position: absolute;
     background-color: rgb(49, 49, 49);
+    position: absolute;
+
 }
 .section__caja--1-1 {
-    background-color: brown ;
+    background-color: brown;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
 
-    
 }
 .section__caja--1-2 {
     background-color: beige;
     position: absolute;
-    top: 0;
-    right: 0;
+    right: 0px;
+    top: 0px;
+    
 }
 
 
 /*Segunda línea*/
+/*--------------------------------------------------------------------*/
 .main__section--brown {
     background-color: gainsboro;
 }
@@ -81,7 +84,7 @@ body {
     background-color: blue;
 }
 .section__caja--2-1 {
-    background-color: rgb(205, 50, 182) ;
+    background-color: rgb(205, 50, 182);
 }
 .section__caja--2-2 {
     background-color: greenyellow;
@@ -90,24 +93,31 @@ body {
 /*Tercera línea*/
 .main__section--blueviolet {
     background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .section__caja--3-0 {
     background-color: red;
-    
+
 }
 .section__caja--3-1 {
     background-color: yellow ;
-   
+  
 }
 .section__caja--3-2 {
     background-color: blue;
-    
+
 }
 
 /*Cuarta línea*/
+/*--------------------------------------------------------------------*/
 .main__section--green {
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__caja--4-0 {
@@ -131,14 +141,21 @@ body {
 }
 .section__caja--5-1 {
     background-color: white ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .section__caja--5-2 {
     background-color: rgb(225, 255, 0);
+    
 }
 
 /*Sexta línea*/
+/*--------------------------------------------------------------------*/
 .main__section--orange {
     background-color: orange;
+    display: flex;
 }
 
 .section__caja--6-0 {
@@ -152,8 +169,12 @@ body {
 }
 
 /*Séptima línea*/
+/*--------------------------------------------------------------------*/
 .main__section--red {
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .section__caja--7-0 {
@@ -167,8 +188,12 @@ body {
 }
 
 /*Octava línea*/
+/*--------------------------------------------------------------------*/
 .main__section--black {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .section__caja--8-0 {
@@ -179,4 +204,7 @@ body {
 }
 .section__caja--8-2 {
     background-color: wheat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
