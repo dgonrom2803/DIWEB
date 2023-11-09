@@ -1,0 +1,209 @@
+/* 
+Colores Principales
+#FF9900
+#FF6600
+#009900
+
+Colores secundarios
+#330033
+#330000
+#FFFFFF
+#000000
+
+Tipografias
+1. Holocausto Zombie    --> Nombre empresa
+2. Roboto               --> Titulos (h1 ... etc)
+3. Noto Serif Japanese  --> Textos (p... etc)
+
+
+*/
+
+body{
+    margin: 0;
+}
+/* Ahora vamos a poner a cada elemento, una tipografia especifica... sin tener en cuenta el font-weight */
+
+
+
+#tituloPagina {
+    color: rgb(206, 53, 53);
+}
+
+.header{
+    height: 90px;
+    background-color: #FFF6E9;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__zonaTitulo{
+    height: 100%;
+    width: 20%;
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #FFF6E9;
+
+    transition: 0.2s linear;
+
+}
+
+#zonaTitulo__logo img{
+    width: 90px;
+    height: auto;
+    background-color: #FFF6E9;
+}
+.header__zonaTitulo:hover{
+    background-color: #FFF6E9;
+    transform: scale(1.05);
+    font-size: 1.2em;
+}
+
+
+
+.header__zonaNavegacion{
+    height: 100%;
+    width: 40%;
+    background-color: #FFF6E9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__zonaNavegacion a{
+    color: rgb(206, 53, 53);
+    text-decoration: none;
+}
+.zonaNavegacion__div{
+    padding: 5px;
+    transition: 0.1s ease-out;
+
+}
+.zonaNavegacion__div:hover{
+    border-bottom: 3px solid rgb(206, 53, 53);
+    border-radius: 5px;
+
+}
+.zonaNavegacion__div h3{
+    margin: 0;
+
+}
+
+
+/************* ZONA MAIN ************/
+.zonaMain{
+
+    margin-top: 10px;
+
+    /*Establecemos el display: grid*/
+    display: grid;
+    /*Cuantas columnas queremos*/
+    grid-template-columns: repeat(12, 1fr);
+
+    /*Establecemos un tamañp minimo a la row*/
+    grid-auto-rows: minmax(200px, auto);
+
+    /*Aplicamos un poco de aire*/
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.main__zonaImagen{
+    grid-column: 2/6;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+.main__zonaImagen img {
+   width: auto;
+   max-height: 300px;
+   border-radius: 10px;
+   border: 6px solid #330033;
+   
+
+   transition: 0.1s linear;
+
+}
+.main__zonaImagen img:hover {
+   transform: scale(1.05);
+   border: 0px solid #330033;
+
+}
+.main__zonaDescripcion{
+    grid-column: 6/12;
+
+    border-left: 6px solid #330033;
+
+    padding: 10px;
+
+}
+
+.zonaDescripcion__actores-nota{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores{
+    grid-column: 1;
+}
+.actores-nota__nota{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nota__puntuacion {
+    font-family: 'ZombieHolocaust';
+    font-size: 3em;
+    color: #009900;
+}
+
+@media all and (max-width: 920px){
+    .main__zonaImagen{
+        grid-column: 2/12;
+    
+        display: flex;
+    
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__zonaDescripcion{
+        grid-column: 2/12;
+        border-left: 0;
+        border-top: 6px solid #330033;
+        
+    
+        padding: 10px;
+    
+    }
+
+    .header{
+       flex-direction: column;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+    
+    .header__zonaTitulo{
+        width: 100%;
+    }
+    .header__zonaNavegacion{
+        width: 100%;
+        padding-bottom: 10px;
+        
+    }
+    
+}
