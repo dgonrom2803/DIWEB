@@ -1,0 +1,306 @@
+//Variables
+$color-textos: #222222;
+$color-fondo: #eeeeee;
+$color-fondo-header: #000000;
+$color-letra-header: #ffffff;
+$color-fondo-footer: #3b3b3b;
+$color-letra-footer: #ffffff;
+$color-letra: #000000;
+$color-fondo-nav: #f0f0f0;
+$color-letra-nav: #222222;
+$color-borde: #DDDDDD;
+$color-borde-elemento-nav: #b31312;
+
+
+// Funciones
+@mixin font-sansSerif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin font-Serif{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin cambiar-fondo-y-letra(
+	$color-nuevo-fondo: #ffffff,
+	$color-nuevo-letra: #000000
+) {
+	background-color: $color-nuevo-fondo;
+	color: $color-nuevo-letra;
+}
+
+@mixin establecer-grid($n-columnas: 12) {
+	display: grid;
+	grid-template-columns: repeat($n-columnas, 1fr);
+}
+
+// Estilo - General
+
+body {
+	margin: 0;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 2/12;
+}
+
+
+
+
+// HEADER
+.header {
+	@include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
+	@include establecer-grid();
+
+	h1 {
+		font-size: 4em;
+	}
+
+	.header__zonaTituloLogo {
+		grid-column: 3/11;
+		@include font-sansSerif();
+	}
+}
+
+// ZONA NAVEGACIÓN
+.nav-bar {
+	@include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 2px solid $color-borde;
+	padding: 2em;
+
+	ul {
+		list-style: none;
+		display: flex;
+
+		li {
+			padding: 0 1em;
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				padding: 1em;
+
+				&:hover {
+					border-bottom: 2px solid $color-borde-elemento-nav;
+				}
+			}
+
+			&.a__active a {
+				border-bottom: 2px solid $color-borde-elemento-nav;
+			}
+		}
+	}
+}
+
+//Estilo - Fin Confianza
+.main-content {
+	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
+	@include establecer-grid();
+
+	section {
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: x-large;
+	}
+
+	.zonaMain {
+		grid-column: 3/11;
+		font-size: large;
+
+		.image-container {
+			text-align: center;
+		}
+
+		img#rosy {
+			display: block;
+			margin: 0 auto;
+			width: 60%;
+		}
+
+		iframe {
+			display: block;
+			margin: 0 auto;
+			width: 60%;
+		}
+	}
+
+	.zonaMain section,
+	p {
+		@include font-sansSerif();
+	}
+
+	.zonaMain h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@include font-Serif();
+	}
+
+	.zonaMain a {
+		color: #CC0000;
+	    text-decoration: none;
+	    a:hover{
+		    color: #222222;
+	    }
+	}
+
+	#zonaMain--título {
+		font-size: 3em;
+	}
+
+	.zonaMain--subtitulo {
+		text-align: center;
+		margin-top: 5px;
+		@include font-sansSerif();
+		font-size: medium;
+		margin-bottom: 2em;
+	}
+
+	.zonaMain--infoAutor {
+		@include establecer-grid();
+		display: flex;
+		align-items: center;
+		margin-bottom: 5em;
+		margin-left: 15%;
+		margin-right: 15%;
+
+		img {
+			max-width: 100%;
+			margin-right: 1em;
+			border-radius: 100%;
+		}
+	}
+}
+
+#autorFecha {
+	@include font-Serif();
+}
+
+// Estilo - Recursos
+
+main {
+	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
+	@include establecer-grid();
+
+	.main__content {
+		display: flex;
+		flex-direction: column;
+		grid-column: 4/11;
+
+		.main__content--lista {
+			a {
+				color: #CC0000;
+	            text-decoration: none;
+	            a:hover{
+		            color: #222222;
+	            }
+			}
+
+			li {
+				padding: 8px;
+				@include font-Serif();
+			}
+		}
+
+		#zonaMain--título {
+			font-size: 3em;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.lista__titulo {
+	@include font-sansSerif();
+}
+
+
+// Estilo - Terminología
+
+.main-content {
+	@include cambiar-fondo-y-letra($color-fondo, $color-letra);
+	@include establecer-grid();
+
+	#zonaMain--título {
+		font-size: 3em;
+		@include font-Serif();
+	}
+
+	.zonaMain {
+		grid-column: 3/11;
+		font-size: large;
+		@include font-sansSerif();
+	}
+
+	.zonaMain a {
+		color: #CC0000;
+	    text-decoration: none;
+	    a:hover{
+		    color: #222222;
+	    }
+	}
+	.zonaMain img {
+		display: block;
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	iframe {
+		margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#main__enlaceReferencia {
+		margin-left: auto;
+	    margin-right: auto;
+		padding: 5em;
+	}
+
+	#video {
+		display: flex;
+		flex-direction: column;
+		i {
+			margin-left: auto;
+	        margin-right: auto;
+			@include font-Serif();
+			font-size: medium;
+		}
+	}
+
+	#quote {
+		display: flex;
+		justify-content: center;
+
+		blockquote {
+			max-width: 65%;
+			background-color: $color-borde;
+			padding: 2em;
+			border-left: 5px solid grey;
+		}
+	}
+}
+
+
+
+// FOOTER
+footer {
+	@include establecer-grid();
+	background-color: $color-fondo-footer;
+	img {
+		grid-column: 3/11;
+	}
+	p {
+		grid-column: 3/11;
+		color: $color-letra-footer;
+	}
+}
