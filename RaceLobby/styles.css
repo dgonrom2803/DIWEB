@@ -1,0 +1,88 @@
+/*---------------------------------HEADER------------------------------------- */
+/*-----------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+@font-face {
+    font-family: "Jockey One";
+    src: url("fonts/JockeyOne-Regular.ttf") format("truetype");
+}
+
+header {
+    background-image: url('images/fondo-header.jpg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    color: #084184; /* Cambiar por el color deseado para el texto del header */
+    padding: 20px 20px; /* Ajustar el padding para reducir aún más la altura del header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+}
+
+.logo img {
+    max-width: 200px; /* Ajustar el tamaño máximo del logo según sea necesario */
+}
+
+.title {
+    text-align: center; /* Centrar el contenido del título */
+    flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+}
+
+.title h1 {
+    margin: 0;
+    font-family: 'Jockey One', sans-serif; /* Cambiar la fuente del título a Jockey One */
+    font-size: 106px; /* Tamaño de fuente del título */
+    font-weight: bold; /* Hacer el título en negrita */
+}
+
+/*---------------------------------NAV---------------------------------------- */
+/*-----------------------------------------------------------------------------*/
+nav {
+    background-color: #333; /* Color de fondo del menú */
+    padding: 10px 20px; /* Espaciado interno del menú */
+    display: flex; /* Aplicar un diseño flexible */
+    justify-content: space-between; /* Distribuir elementos a lo largo de la barra */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los estilos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aplicar un diseño flexible */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaciado entre elementos de lista */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de lista */
+}
+
+nav ul li a {
+    color: white; /* Color del texto de enlace */
+    text-decoration: none; /* Elimina el subrayado de enlace */
+    font-size: 16px; /* Tamaño de fuente del enlace */
+}
+
+
+/*---------------------------------MAIN---------------------------------------- */
+/*-----------------------------------------------------------------------------*/
+main {
+    background-image: url('images/fondo-main.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el elemento */
+    height: 100vh; /* Establece la altura al 100% de la ventana visible */
+    padding: 40px; /* Ajusta el padding según sea necesario */
+    position: relative; /* Establece la posición relativa para el posicionamiento absoluto del contenedor */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Sitúa el contenedor en la mitad superior del elemento principal */
+    left: 50%; /* Sitúa el contenedor en la mitad izquierda del elemento principal */
+    transform: translate(-50%, -50%); /* Centra el contenedor */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+}
