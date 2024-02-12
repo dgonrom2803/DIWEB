@@ -1,5 +1,4 @@
 /*---------------------------------HEADER------------------------------------- */
-/*-----------------------------------------------------------------------------*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,80 +8,158 @@ body {
     font-family: "Jockey One";
     src: url("fonts/JockeyOne-Regular.ttf") format("truetype");
 }
+@font-face {
+    font-family: "OpenDislexic";
+    src: url("fonts/OpenDyslexicMono-Regular.otf") format("truetype");
+}
 
 header {
-    background-image: url('images/fondo-header.jpg'); /* URL de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    color: #084184; /* Cambiar por el color deseado para el texto del header */
-    padding: 20px 20px; /* Ajustar el padding para reducir aún más la altura del header */
+    background-image: url('images/fondo-header.jpg');
+    background-size: cover;
+    color: #084184;
+    padding: 20px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    justify-content: space-between;
 }
 
 .logo img {
-    max-width: 200px; /* Ajustar el tamaño máximo del logo según sea necesario */
+    max-width: 200px;
 }
 
 .title {
-    text-align: center; /* Centrar el contenido del título */
-    flex-grow: 1; /* Permite que el título ocupe el espacio restante */
+    text-align: center;
+    flex-grow: 1;
 }
 
 .title h1 {
     margin: 0;
-    font-family: 'Jockey One', sans-serif; /* Cambiar la fuente del título a Jockey One */
-    font-size: 106px; /* Tamaño de fuente del título */
-    font-weight: bold; /* Hacer el título en negrita */
+    font-family: 'Jockey One', sans-serif;
+    font-size: 106px;
+    font-weight: bold;
 }
 
 /*---------------------------------NAV---------------------------------------- */
-/*-----------------------------------------------------------------------------*/
 nav {
-    background-color: #333; /* Color de fondo del menú */
-    padding: 10px 20px; /* Espaciado interno del menú */
-    display: flex; /* Aplicar un diseño flexible */
-    justify-content: space-between; /* Distribuir elementos a lo largo de la barra */
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav ul {
-    list-style-type: none; /* Elimina los estilos de lista */
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Aplicar un diseño flexible */
+    display: flex;
 }
 
 nav ul li {
-    margin-right: 20px; /* Espaciado entre elementos de lista */
+    margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último elemento de lista */
+    margin-right: 0;
 }
 
 nav ul li a {
-    color: white; /* Color del texto de enlace */
-    text-decoration: none; /* Elimina el subrayado de enlace */
-    font-size: 16px; /* Tamaño de fuente del enlace */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
 }
-
 
 /*---------------------------------MAIN---------------------------------------- */
-/*-----------------------------------------------------------------------------*/
 main {
-    background-image: url('images/fondo-main.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen en el elemento */
-    height: 100vh; /* Establece la altura al 100% de la ventana visible */
-    padding: 40px; /* Ajusta el padding según sea necesario */
-    position: relative; /* Establece la posición relativa para el posicionamiento absoluto del contenedor */
+    background-image: url('images/fondo-main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 40px;
+    position: relative;
 }
 
-.container {
-    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semitransparente */
-    position: absolute; /* Establece la posición absoluta */
-    top: 50%; /* Sitúa el contenedor en la mitad superior del elemento principal */
-    left: 50%; /* Sitúa el contenedor en la mitad izquierda del elemento principal */
-    transform: translate(-50%, -50%); /* Centra el contenedor */
-    padding: 20px; /* Ajusta el padding según sea necesario */
+/*---------------------------------FORM---------------------------------------- */
+.main__formularioContacto {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.main__formularioContacto input[type="text"],
+.main__formularioContacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.main__formularioContacto button[type="submit"] {
+    background-color: #084184;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.main__formularioContacto button[type="submit"]:hover {
+    background-color: #06335e;
+}
+
+/*---------------------------------REDES---------------------------------------- */
+.redes-sociales {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.redes-sociales h2 {
+    margin-bottom: 20px;
+}
+
+.redes a {
+    margin: 0 10px;
+}
+
+.redes img {
+    width: 40px;
+}
+
+/*---------------------------------FOOTER------------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-images {
+    margin-top: 20px;
+}
+
+.footer-images img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer-redes {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.footer-redes a {
+    margin-left: 10px;
+}
+
+.footer-redes img {
+    width: 30px; 
+}
+

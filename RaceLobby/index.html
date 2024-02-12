@@ -15,6 +15,9 @@
     <div class="title">
         <h1>RaceLobby</h1>
     </div>
+    <div class="font-toggle">
+        <button onclick="toggleFont()">Cambiar Fuente</button>
+    </div>
 </header>
 
 <nav>
@@ -26,13 +29,64 @@
     </ul>
 </nav>
 
-<main>
-    <div class="container">
-        <!-- Contenido del contenedor aquí -->
+<main class="inter-regular">
+    <form class="main__formularioContacto">
+        <h2>CONTACTO</h2>
+        <input
+            type="text"
+            name="input__nombre"
+            id="input__nombre"
+            placeholder="Nombre"
+        />
+         <input
+            type="text"
+            name="input__apellidos"
+            id="input__apellidos"
+            placeholder="Apellidos"
+        />
+        <input
+            type="text"
+            name="input__email"
+            id="input__email"
+            placeholder="Email"
+        />
+       
+        <textarea
+            name="input__descripcion"
+            id="input__descripcion"
+            placeholder="Escriba su mensaje"
+            rows="5"
+            resize="none"
+        ></textarea>
+
+        <button type="submit"><b>ENVIAR</b></button>
+    </form>
+    <div class="redes-sociales">
+        <h2>REDES SOCIALES</h2>
+        <div class="redes">
+            <a href="#"><img src="images/facebook-circle.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/X_logo_2023.svg" alt="X"></a>
+            <a href="#"><img src="images/instagram-logo-A807AD378B-seeklogo.com.png" alt="Instagram"></a>
+            <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+        </div>
     </div>
 </main>
 
+<footer>
+    <p>RaceLobby © 2024 by Diego González is licensed under CC BY-NC-ND 4.0</p>
+    <div class="footer-images">
+        <img src="images/cc.svg" alt="Image 1">
+        <img src="images/by.svg" alt="Image 2">
+    </div>
+    <div class="footer-redes">
+        <a href="#"><img src="images/facebook-circle.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/X_logo_2023.svg" alt="X"></a>
+        <a href="#"><img src="images/instagram-logo-A807AD378B-seeklogo.com.png" alt="Instagram"></a>
+        <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+    </div>
+</footer>
 
+<script src="script.js"></script>
 
 </body>
 </html>
