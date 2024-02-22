@@ -70,7 +70,7 @@ nav ul li a {
 
 /*---------------------------------MAIN---------------------------------------- */
 main {
-    background-image: url('images/fondo-main.jpg');
+    background-image: url('images/fondo-main.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
