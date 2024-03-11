@@ -19,7 +19,6 @@
         <button onclick="toggleFont()">Cambiar Fuente</button>
     </div>
 </header>
-
 <nav>
     <ul>
         <li><a href="index.html">INICIO</a></li>
@@ -28,10 +27,30 @@
         <li><a href="contacto.html">CONTACTO</a></li>
     </ul>
 </nav>
-
-<main class="index__main">
-        <img src="./assets/images/fondo_landing_2.png" alt="prueba" srcset="./assets/images/fondo_landing_2.png" />
+<main>
+    <div class="main__carrousel">
+        <div class="carrousel__grande">
+             <div class="grande__picture">
+                  <picture>
+                       <source type="image/webp" srcset="./assets/images/1.jpg" />
+                       <source type="image/jpg" srcset="./assets/images/1.jpg" />
+                       <img class="img" src="./assets/images/1.jpg" alt="montecarlo" srcset="./assets/images/1.jpg" />
+                  </picture>
+             </div>
+             <div class="grande__picture">
+                  <picture>
+                       <source type="image/webp" srcset="./assets/images/2.jpg" />
+                       <source type="image/jpg" srcset="./assets/images/2.jpg" />
+                       <img class="img" src="./assets/images/2.jpg" alt="suecia" srcset="./assets/images/2.jpg" />
+                  </picture>
+             </div>
+        </div>
+        <div class="carrousel__botones">
+             <div role="button" class="botones__boton activo"></div>
+             <div role="button" class="botones__boton"></div>
+        </div>
 </main>
+
 
 <footer>
     <div class="footer-images">
@@ -45,7 +64,7 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="carrousel.js"></script>
 
 </body>
 </html>
